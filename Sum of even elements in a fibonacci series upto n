@@ -13,7 +13,7 @@ int main(){
             std::cin>>n;
             std::cin.clear();
             fflush(stdin);
-        }while(n<=0);
+        }while(n<0);
         long long int t1=-1,t2=1,t3=0,sum=0;
         while(t1+t2<=n){
             t3=t1+t2;
