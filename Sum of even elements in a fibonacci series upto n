@@ -9,11 +9,11 @@ int main(){
     while(t!=0){
         int n;
         do{
-            std::cout<<"Enter a valid term: ";
-            std::cin>>n;
             std::cin.clear();
             fflush(stdin);
-        }while(n<0);
+            std::cout<<"Enter a valid term: ";
+            std::cin>>n;
+        }while(n<0||!std::cin.good());
         long long int t1=-1,t2=1,t3=0,sum=0;
         while(t1+t2<=n){
             t3=t1+t2;
